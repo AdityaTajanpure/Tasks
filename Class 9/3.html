@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 780px;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        input[type=text],
+        input[type=email] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        textarea {
+            width: 100%;
+            margin: 8px 0;
+            padding: 12px 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" maxlength="20" required>
+            <br>
+            <label for="contact">Contact No:</label>
+            <input type="text" name="contact" id="contact" maxlength="20" required>
+            <br>
+            <label for="Email">Email:</label>
+            <input type="email" name="Email" id="Email" maxlength="20" required>
+            <br>
+            <label for="message">Message:</label>
+            <!-- <input type="text" name="message" id="message" maxlength="20" required> -->
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <br>
+            <input type="radio" name="type" value="Salaried" checked>
+            <label for="type">Salaried</label>
+            <input type="radio" name="type" value="Own Business">
+            <label for="type">Own Business</label>
+            <input type="submit" value="Submit">
+            <br>
+        </form>
+    </div>
+</body>
+
+</html>
